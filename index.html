@@ -19,7 +19,7 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
                 <img src="images/logo.jpg" alt="Ayra Properties Ltd. Logo" class="logo-img me-2">
@@ -30,44 +30,72 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#previous-projects">Previous Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#running-projects">Running Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#previous-projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#running-projects">On Going</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
+
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold text-white">Welcome to Ayra Properties Ltd.</h1>
-                    <p class="lead text-white">Your trusted partner in premium land development and sales. Discover
-                        exceptional properties that turn dreams into reality.</p>
-                    <a href="#contact" class="btn btn-light btn-lg">Get In Touch</a>
+    <!-- Hero Section (Carousel) -->
+    <section id="home" class="hero-section p-0">
+        <div id="heroCarousel" class="carousel slide fade-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 2 (Now 1) -->
+                <div class="carousel-item active">
+                    <div class="overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                        class="d-block w-100 hero-img" alt="Modern Villa">
+                    <div class="carousel-caption d-flex align-items-center h-100">
+                        <div class="container text-center">
+                            <h1 class="display-3 fw-bold text-white text-uppercase tracking-wider">Exclusive Land
+                                Plots
+                            </h1>
+                            <p class="lead text-white mb-4">Prime locations for your dream residential project</p>
+                            <a href="#previous-projects" class="btn btn-light btn-lg rounded-pill px-5">VIEW
+                                PROJECTS</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                        alt="Modern Property" class="img-fluid rounded">
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1600596542815-e32870110494?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                        class="d-block w-100 hero-img" alt="Green Living">
+                    <div class="carousel-caption d-flex align-items-center h-100">
+                        <div class="container text-center">
+                            <h1 class="display-3 fw-bold text-white text-uppercase tracking-wider">Sustainable
+                                Living
+                            </h1>
+                            <p class="lead text-white mb-4">Eco-friendly communities designed for wellness</p>
+                            <a href="#contact" class="btn btn-light btn-lg rounded-pill px-5">CONTACT US</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-5 bg-light">
+    <section id="about" class="py-5 bg-warm">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -151,7 +179,7 @@
     </section>
 
     <!-- Running Projects Section -->
-    <section id="running-projects" class="py-5 bg-light">
+    <section id="running-projects" class="py-5 bg-warm">
         <div class="container">
             <h2 class="text-center mb-5">Running Projects</h2>
             <div class="row">
