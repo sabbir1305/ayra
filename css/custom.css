@@ -5,8 +5,14 @@ body {
     line-height: 1.6;
 }
 
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+
 .hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c5530 0%, #4a90e2 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -68,8 +74,8 @@ body {
 }
 
 .card-footer {
-    background-color: rgba(102, 126, 234, 0.1);
-    border-top: 1px solid rgba(102, 126, 234, 0.2);
+    background-color: rgba(76, 144, 226, 0.1);
+    border-top: 1px solid rgba(76, 144, 226, 0.2);
 }
 
 .clickable-image {
@@ -97,7 +103,7 @@ body {
 
 .contact-icon {
     font-size: 2rem;
-    color: #667eea;
+    color: #4a90e2;
     margin-bottom: 15px;
 }
 
@@ -109,7 +115,22 @@ body {
 }
 
 .contact-link:hover {
-    color: #667eea;
+    color: #4a90e2;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2c5530 0%, #4a90e2 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4a90e2 0%, #2c5530 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-light {
@@ -124,8 +145,8 @@ body {
 }
 
 .form-control:focus {
-    border-color: #667eea;
-    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
 }
 
 footer {
@@ -149,5 +170,9 @@ footer {
 
     .carousel-caption {
         font-size: 0.9rem;
+    }
+
+    .logo-img {
+        height: 30px;
     }
 }
